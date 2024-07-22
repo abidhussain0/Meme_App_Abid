@@ -1,0 +1,127 @@
+/* Box.css */
+.box {
+    background-color: #00bcd4;
+    position: relative;
+    user-select: none;
+  }
+  
+  .box-wrapper {
+    position: absolute;
+    transform-origin: center center;
+    user-select: none;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #1e88e5;
+    position: absolute;
+    border-radius: 100px;
+    border: 1px solid white;
+    user-select: none;
+  }
+  
+  .dot:hover {
+    background-color: #0d47a1;
+  }
+  
+  .dot.left-top {
+    top: -5px;
+    left: -5px;
+  }
+  
+  .dot.left-bottom {
+    bottom: -5px;
+    left: -5px;
+  }
+  
+  .dot.right-top {
+    top: -5px;
+    right: -5px;
+  }
+  
+  .dot.right-bottom {
+    bottom: -5px;
+    right: -5px;
+  }
+  
+  .dot.top-mid {
+    top: -5px;
+    left: calc(50% - 5px);
+  }
+  
+  .dot.left-mid {
+    left: -5px;
+    top: calc(50% - 5px);
+  }
+  
+  .dot.right-mid {
+    right: -5px;
+    top: calc(50% - 5px);
+  }
+  
+  .dot.bottom-mid {
+    bottom: -5px;
+    left: calc(50% - 5px);
+  }
+  
+  .dot.rotate {
+    top: -30px;
+    left: calc(50% - 5px);
+    cursor: url('https://findicons.com/files/icons/1620/crystal_project/16/rotate_ccw.png'), auto;
+  }
+  
+  .rotate-link {
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background-color: #1e88e5;
+    top: -20px;
+    left: calc(50% + 0.5px);
+    z-index: -1;
+  }
+  /* Text.css */
+.text-box {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .resize-handle {
+    position: absolute;
+    background: #1e88e5;
+    user-select: none;
+    z-index: 10;
+  }
+  
+  .resize-handle.right {
+    width: 10px;
+    height: 100%;
+    right: -5px;
+    top: 0;
+    cursor: ew-resize;
+  }
+  
+  .resize-handle.bottom {
+    width: 100%;
+    height: 10px;
+    left: 0;
+    bottom: -5px;
+    cursor: ns-resize;
+  }
+  
+  .rotate-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #1e88e5;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  
+  
